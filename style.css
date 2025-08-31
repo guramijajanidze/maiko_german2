@@ -1,0 +1,570 @@
+/* NAVIGATION */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgb(255, 184, 28);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15% 0 10%;
+  box-sizing: border-box;
+  z-index: 1000;
+  height: 120px;
+  margin-bottom: 0;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center; 
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  gap: 50px;
+}
+
+.nav-item a {
+  color: black;          
+  font-weight: bold;     
+  text-decoration: none; 
+  font-size: 1.5rem;       
+}
+
+
+/* MAIN */
+main {
+    position: relative;
+    top: 120px;
+    min-height: 1500px;
+}
+
+
+.container {
+    width: 1325px;
+    margin: 20px auto;
+    min-height: 480px;
+}
+
+#container2 {
+    justify-content: center;
+    background-color: #D9D9D9;
+    width: 100%;
+    padding: 10px 0px;
+    margin-top: 70px;
+}
+
+.leveltitle {
+    text-align: center;
+    margin: 5px auto;
+}
+
+#container2 {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+#container2.visible {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.5s ease;
+}
+
+#level2 {
+  transition: opacity 0.5s ease;
+}
+
+
+
+#h2_topic {
+    width: 1325px;
+    justify-content: center;
+    margin: 0 auto;    
+}
+
+#grid {
+    background-color: #D9D9D9;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 250px); 
+    grid-template-rows: repeat(2, 321px);    
+    gap: 20px;                               
+    justify-content: center;                 
+}
+
+
+/* Individual grid items */
+.item,
+.item1 {
+    width: 250px;
+    height: 321px;
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: center;
+    font-family: sans-serif;
+    color: white;
+    background: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: box-shadow 0.3s ease;
+    position: relative;
+
+
+}
+
+.item1:hover,
+.item:hover {
+    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.3);
+    width: 253px;
+    height: 323px;  
+    cursor: pointer;
+}
+
+.item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;      
+    display: block;
+    border-radius: 0;
+    transition: box-shadow 0.3s ease;
+       
+}
+
+.item {
+    position: relative; /* needed for absolute positioning of ::after */
+}
+
+.item {
+    position: relative;
+}
+
+
+#level2:hover::after,
+.item:hover::after {
+    content: "ჯერ არ არის\nხელმისაწვდომი";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    background-color: rgba(0,0,0,0.7);
+    padding: 5px 10px;
+    border-radius: 5px;
+    white-space: pre-line; /* use pre-line to handle multiple line breaks */
+    text-align: center;
+    z-index: 10;
+    max-width: 80%;
+}
+
+
+
+.item_text {
+    margin: 0;
+    padding: 8px;
+    position: relative;
+    bottom: 47px;
+    font-size: 21px;
+}
+
+.item_text:hover {
+    color: #FFB81C;
+    cursor: pointer;
+}
+
+
+
+.subcontainer1_title {
+    margin: 0 auto;
+    display: flex;
+}
+
+.subcontainer2_content {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.subcontainer3_img {
+    width: 550px;
+    height: 400px;
+    border-radius: 20px;
+    background-color: #D14949;
+    border-radius: 20px;
+    transition: 0.2s ease;
+
+}
+
+.subcontainer3_img:hover {
+    transform: scale(1.05); 
+    cursor: pointer;
+}
+
+#level2 {
+    transition: 0.2s ease;
+}
+
+img {
+    border-radius: 20px;
+}
+
+
+/* UNITS */
+.unit_container {
+    display: flex;             
+    gap: 10px;                  
+    align-items: center;
+    justify-content: space-between;    
+    margin: 0 auto;
+    gap: 50px;
+    width: 1200px;
+    margin-top: 50px;
+}
+
+.unit_textbox {
+    background-color: #D14949;
+    color: white;
+    font-family: cursive;
+    padding: 10px 20px;
+    box-shadow: 3px 3px 10px black;
+    width: 500px;
+    height: 430px;
+}
+
+span {
+    color: black;
+}
+
+.unit_vocabulary {
+    background-color: #fefffb;
+    color: black;
+    font-family: cursive;
+    padding: 10px 20px;
+    box-shadow: 3px 3px 10px black;
+    width: 500px;
+    height: 430px;
+    scroll-behavior: smooth;
+    overflow-y: auto; 
+  
+}
+
+.wordoriginal {
+    font-weight: bold;
+}
+
+.vocabulary_title:hover {
+    cursor: pointer;
+}
+
+.vocabulary_hidden {
+    max-height: 0;             
+    overflow: hidden;          
+    margin-top: 5px;
+    padding: 0 5px;            
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.vocabulary_hidden.show {
+    max-height: 500px;         
+    padding: 5px;              
+}
+
+
+
+#unit_container2 {
+    display: block;
+    padding-top: 10px;
+}
+
+#unit_container2_background {
+    background-color: whitesmoke;
+    margin-top: 30px;
+    height: 900px;
+}
+
+.unit_excercisetable {
+    width: 1200px;
+    height: 200px;
+}
+
+.unit_excercisetable_row1 {
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.unit_excercisetable_row1_box {
+    width: 250px;
+    height: 80px;
+    background-repeat: no-repeat;          
+    background-position: calc(100% - 20px) center; 
+    background-size: 25% auto; 
+    background-color: #3FA34D;
+    border-radius: 10px;
+    
+    display: flex;              /* make it a flex container */
+    align-items: center;        /* center vertically */
+    justify-content: center;    /* center horizontally */
+    position: relative;         /* allow shifting */            
+}
+
+.unit_excercisetable_row1_box:hover {
+    cursor: pointer;
+    color: white;
+    opacity: 0.8;
+}
+
+.unit_excercisetable_row1_box h3 {
+    position: relative;
+    left: -20px;   /* shift text 20px left from center */
+    margin: 0;     /* remove default h3 margins */
+    font-size: 21px;
+}
+
+.unit_excercisetable_row1_box h3:hover {
+    color: white;
+}
+
+
+#unit_excercisetable_row1_box1 {
+    background-image: url(/iconexcercise1.png);
+}
+
+#unit_excercisetable_row1_box2 {
+    background-image: url(/iconexcercise2.png);
+}
+
+#unit_excercisetable_row1_box3 {
+    background-image: url(/iconexcercise3.webp);
+
+}
+
+#unit_excercisetable_row1_box2 h3,
+#unit_excercisetable_row1_box3 h3 {
+    left: -10px;      
+}
+
+#unit_excercisetable_row1_box4 h3 {
+    left: -30px;       
+}
+
+#unit_excercisetable_row1_box4 {
+    background-image: url(/iconexcercise4.png);
+}
+
+
+.unit_excercisetable_row2,
+.fillin,
+.dragdrop,
+.flashcards {
+    border: 1px grey;
+    width: 1207px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 2px 2px 5px black;
+    display: none; /* hidden until selected */
+
+}
+
+
+
+
+
+
+
+/* --------------------------------------------------- */
+/* QUIZ */
+
+.app {
+  background: #fff;
+  margin: 100px auto 0;
+  border-radius: 10px;
+  padding: 30px;
+  margin-bottom: 50px;
+}
+
+.app h1{
+  font-size: 25px;
+  color: #001e4d;
+  font-weight: 600;
+  border-bottom: 1px solid #333;
+  padding-bottom: 30px;
+}
+.quiz{
+  padding: 20px 0;
+}
+.quiz h2{
+  font-size: 18px;
+  color: #001e4d;
+  font-weight: 600;
+}
+.btn{
+  background: #fff;
+  color: #222;
+  font-weight: 500;
+  width: 100%;
+  border: 1px solid #222;
+  padding: 10px;
+  margin: 10px 0;
+  text-align: left;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.btn:hover:not([disabled]){
+  background: #222;
+  color: #fff;
+}
+.btn:disabled{
+  cursor: no-drop;
+}
+#next-btn{
+  background: #001e4d;
+  color: #fff;
+  font-weight: 500;
+  width: 150px;
+  border: 0;
+  padding: 10px;
+  margin: 20px auto 0;
+  border-radius: 4px;
+  cursor: pointer;
+  display: none;
+}
+.correct{
+  background: #9aeabc;
+}
+.incorrect{
+  background: #ff9393;
+}
+
+ .watch-link{
+   position: absolute;
+   bottom: 5%;
+   right: 5%;
+   color: #fff;
+   text-decoration: none;
+ }
+
+
+
+
+ /* --------------------------------------------------- */
+ /* FLASCHARD */
+
+.semi-big-cont {
+    margin: 0 auto;
+    align-content: center;
+    height: auto;
+    justify-content: center;
+}
+
+.maincontainer {
+    width: 137px;
+    height: 180px;
+    background: none;
+    margin: 0 auto;
+    display: inline-flex;
+    margin: 5px;
+    background-color: white;
+  }
+  
+  /* THE CARD HOLDS THE FRONT AND BACK FACES */
+  .thecard{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transform-style: preserve-3d;
+    transition: all 0.8s ease;
+  }
+  
+  /* THE PSUEDO CLASS CONTROLS THE FLIP ON MOUSEOVER AND MOUSEOUT */
+  .thecard:hover{
+    transform: rotateY(180deg);
+  }
+  
+  /* THE FRONT FACE OF THE CARD, WHICH SHOWS BY DEFAULT */
+   .thefront{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    background: #ffc728;
+    color: #000;
+    align-items: center;
+    justify-content: center;
+}
+  
+  /* THE BACK FACE OF THE CARD, WHICH SHOWS ON MOUSEOVER */
+  .theback{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    background: #fafafa;
+    color: #333;
+    text-align: center;
+    transform: rotateY(180deg);
+    align-items: center;
+    justify-content:center;
+  }
+  
+  
+  /*This block (starts here) is merely styling for the flip card, and is NOT an essential part of the flip code */
+
+  .thefront p {
+    font-family: 'zilla slab', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    position: relative;
+    font-weight: bold;
+    padding-top: 70px;
+    padding-left: 10px;
+    padding-right: 10px;     
+  }
+
+  .theback p {
+    font-family: 'zilla slab', sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    text-align: center;
+    font-style: italic;
+    padding-top: 70px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  /* */
+
+
+  .fillin {
+    border: 1px solid blue;
+    height: 200px;
+  }
+
+  .dragdrop {
+    border: 1px solid blueviolet;
+    height: 200px;
+  }
+
+
+  .unavailable-text {
+    font-size: 60px;              /* large text */
+    color: #333;                  /* optional: text color */
+    margin: 0 auto;
+    position: relative;
+    top: 45px;
+    left: 250px;
+}
