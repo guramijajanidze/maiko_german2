@@ -1,0 +1,247 @@
+.unit_familytree {
+    border: 1px solid red;
+    width: 1000px;
+    height: 550px;
+    background-color: rgb(209, 73, 73);
+}
+
+.unit_familytree_box1 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.unit_familytree_box1 h3 {
+    background-color: rgb(255, 184, 28);
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+
+.unit_familytree_box2 {
+    border: 1px solid white;
+    height: 400px;
+}
+
+
+/* FAMILY TREE */
+.family-tree {
+  position: relative;
+  width: 640px;
+  height: 400px;
+  margin: 0 auto;
+}
+
+/* Base member style */
+.member {
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  box-shadow: 1px 1px 15px black;
+}
+
+.member:hover {
+    cursor: pointer;
+    border-color: rgb(255, 184, 28);
+    border: 3px solid rgb(255, 184, 28);
+}
+
+/* ==== Grandparents ==== */
+.grandparent1 {
+  top: 20px;
+  left: 140px;
+  background-image: url("unit2_5.png"); /* grandfather */
+}
+
+.grandparent2 {
+  top: 20px;
+  left: 420px;
+  background-image: url("unit2_4.png"); /* grandmother */
+}
+
+/* ==== Parents ==== */
+.parent1 {
+  top: 140px;
+  left: 180px;
+  background-image: url("unit2_3.png"); /* father */
+}
+
+.parent2 {
+  top: 140px;
+  left: 380px;
+  background-image: url("unit2_2.png"); /* mother */
+}
+
+/* ==== Children ==== */
+.sibling1 {
+  bottom: 20px;
+  left: 140px;
+  background-image: url("unit2_6.png"); /* sibling 1 */
+}
+
+.child {
+  bottom: 20px;
+  left: 280px;
+  background-image: url("unit2_1.png"); /* child */
+}
+
+.sibling2 {
+  bottom: 20px;
+  left: 420px;
+  background-image: url("unit2_7.png"); /* sibling 2 */
+}
+
+.hidden_text {
+    display: none;
+}
+
+/* Adjust all texts inside hero bubble */
+#hero .hero_bubble p {
+    margin-top: 15%;  /* moves text down 10% of the bubble's height */
+}
+
+/* Only move family member texts down */
+#hero .hero_bubble p.family-text {
+    margin-top: 15%;
+}
+
+
+
+/* Hero container */
+#hero {
+    position: fixed;
+    bottom: 0%;            /* distance from bottom */
+    left: 65%;             /* horizontal position */
+    width: 30vw;           /* responsive width */
+    height: auto;          
+    display: block;
+    z-index: 9999;
+    border-radius: 10px;
+    box-shadow: none;      /* no border/shadow */
+
+    /* initially hidden and off-screen */
+    opacity: 0;
+    transform: translateY(100%) scale(0.8);
+
+    /* smooth transition */
+    transition: transform 0.8s ease, opacity 0.8s ease;
+}
+
+/* Hero pops out */
+#hero.show {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+/* Make the image fill the container */
+#hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px; /* match container */
+}
+
+#hero {
+    position: fixed;
+    bottom: 0%;            /* distance from bottom */
+    left: 65%;             /* horizontal position */
+    width: 30vw;           /* responsive width */
+    height: auto;          
+    display: block;
+    z-index: 9999;
+    border-radius: 10px;
+    box-shadow: none;      /* no border/shadow */
+
+    /* initially hidden and off-screen */
+    opacity: 0;
+    transform: translateY(100%) scale(0.8);
+
+    /* smooth transition */
+    transition: transform 0.8s ease, opacity 0.8s ease;
+}
+
+/* Hero pops out */
+#hero.show {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+/* Make the image fill the container */
+#hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px; /* match container */
+}
+
+/* Hero bubble container */
+.hero_bubble {
+    position: absolute;                  /* relative to hero */
+    top: -4vw;                          /* adjust to sit above hero's head */
+    left: -13vw;                         /* adjust to align top-left */
+    width: 25vw;                        /* fixed width */
+    height: 17vw;                       /* fixed height */
+    background-image: url("unit2_mainhero_bubble.png"); /* bubble background */
+    background-size: cover;              /* fit image to container */
+    background-repeat: no-repeat;
+    border-radius: 15px;                 /* optional, matches bubble shape */
+    padding: 10px;                        /* spacing inside bubble */
+    box-sizing: border-box;
+    z-index: 10;                         /* above hero image */
+    pointer-events: none;                /* don't block clicks */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+/* Paragraph inside bubble */
+#hero .hero_bubble p {
+    position: fixed; /* or absolute if you prefer */
+    top: -2%;
+    left: -28%;       /* distance from left of viewport/page */
+    width: 16vw;     /* optional, controls horizontal size */
+    height: auto;
+    margin: 0;       /* remove previous margin-top */
+    padding: 10px;
+    border-radius: 12px;
+    text-align: center;
+    word-wrap: break-word;
+    background: transparent;
+    font-size: 1.25vw;
+    font-family: cursive;
+    transform: none;        /* cancel any previous transforms */
+    z-index: 9999;          /* make sure it’s above other elements */
+}
+
+
+
+
+/* Fade in */
+.hero_bubble.show {
+    opacity: 1;
+}
+
+
+
+
+
+.intro_family {
+    border: 1px solid white;
+    text-align: center;
+    background:rgb(255, 184, 28);
+    width: 200px;
+    padding: 5px;
+    margin: 0 auto;
+    border-radius: 2px;
+    margin-top: 15px;
+}
+
+.intro_family:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}

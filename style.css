@@ -280,7 +280,7 @@ span {
 #unit_container2_background {
     background-color: whitesmoke;
     margin-top: 30px;
-    height: 900px;
+    height: 220px;
 }
 
 .unit_excercisetable {
@@ -365,6 +365,7 @@ span {
     justify-content: space-between;
     box-shadow: 2px 2px 5px black;
     display: none; /* hidden until selected */
+    margin-top: 100px;
 
 }
 
