@@ -292,3 +292,31 @@ members.forEach((member, index) => {
     });
 });
 
+
+//* Hover over Flashcards - Disappear Luka's Bubble" */
+
+// SELECT LUKAS' BUBBLE
+const lukaBubble = document.querySelector('#hero .hero_bubble');
+
+// ALL EXERCISE TABS
+const exerciseTabs = document.querySelectorAll('.unit_excercisetable_row1_box');
+
+// ALL FLASHCARDS
+const flashcards = document.querySelectorAll('.flashcards .maincontainer');
+
+// FUNCTION TO HIDE BUBBLE
+function hideLukaBubble() {
+    lukaBubble.classList.remove('show');
+}
+
+// ADD HOVER EVENT TO TABS
+exerciseTabs.forEach(tab => {
+    tab.addEventListener('mouseenter', hideLukaBubble);
+});
+
+// ADD HOVER EVENT TO FLASHCARDS
+flashcards.forEach(card => {
+    card.addEventListener('mouseenter', hideLukaBubble);
+});
+
+
