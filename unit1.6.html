@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dragdrop.css">
+    <title>DS - Unit 1 </title>
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li class="nav-item"><a href="index.html">Main</a></li>
+            <li class="nav-item"><a href="#services">Services</a></li>
+            <li class="nav-item"><a href="#blog">Blog</a></li>
+            <li class="nav-item"><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="logo">
+        <!-- Replace src with your logo image path -->
+        </div>
+    </nav>
+    <main>
+        <div class="unit_container">
+            <div class="unit_subcontainer">
+
+                <!-- Groceries -->
+                <div class="grocery_container" id="fruit_container">
+                    <div class="category_selection">
+                        <div class="unit_categories">
+                            <h3 id="obst">Obst</h3>
+                            <h3 id="gemuse">Gemüse</h3>
+                            <h3 id="getranke">Getränke</h3>
+                            <h3 id="fleisch">Fleisch & Fisch</h3>
+                        </div>
+                        <div class="unit_categories" id="unit_categories2">
+                            <h3 id="milch">Milchprodukte & Eier</h3>
+                            <h3 id="backwaren">Brot & Backwaren</h3>                                      
+                            <h3 id="snacks">Snacks</h3>        
+                        </div>
+                    </div>
+                    <div class="assets-middle">
+                        <div class="upper_shelf">
+                            <div><img class="shop_item" src="unit5_fruit3.png"></div>
+                            <div><img class="shop_item" src="unit5_fruit2.png"></div>
+                        </div>
+                        <div class="lower_shelf">
+                            <div><img class="shop_item_boxes" src="unit5_fruit1.png"></div>
+                            <div><img class="shop_item_boxes" src="unit5_fruit4.png"></div>
+                            <div><img class="shop_item_boxes" src="unit5_fruit4.png"></div>
+                        </div>
+                    </div> <!-- layer 3 -->
+                    <div class="foreground"><img src="unit5_1background2.png" width="770px"></div> <!-- layer 2 -->
+                </div>
+
+                <!-- Groceries -->
+                <div class="grocery_container" id="vegetables_container">
+                    <div class="category_selection" id="category_selection_veg">
+                        <div class="unit_categories">
+                            <h3 id="obst">Obst</h3>
+                            <h3 id="gemuse">Gemüse</h3>
+                            <h3 id="getranke">Getränke</h3>
+                            <h3 id="fleisch">Fleisch & Fisch</h3>
+                        </div>
+                        <div class="unit_categories" id="unit_categories2">
+                            <h3 id="milch">Milchprodukte & Eier</h3>
+                            <h3 id="backwaren">Brot & Backwaren</h3>                                      
+                            <h3 id="snacks">Snacks</h3>        
+                        </div>
+                    </div>
+                    <div class="assets-middle" id="assets_middle_veg">
+                        <div class="upper_shelf_veg">
+                            <div><img class="shop_item" id="veg1" src="unit5_veg1.png"></div>
+                            <div><img class="shop_item" id="veg2" src="unit5_veg2.png"></div>
+                            <div><img class="shop_item" id="veg3" src="unit5_veg4.png"></div>
+                        </div>
+                        <div class="lower_shelf_veg">
+                            <div><img class="shop_item" id="veg4" src="unit5_veg5.png"></div>
+                            <div><img class="shop_item" id="veg5" src="unit5_veg3.png"></div>
+                            <div><img class="shop_item" id="veg6" src="unit5_veg6.png"></div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+                <div class="unit_vocabulary">
+                    <h3 class="vocabulary_title">Fruits (Obst)</h3>
+                    <div class="vocabulary_hidden">
+                        <span class="wordoriginal">der Apfel</span> - apple<br>
+                        <span class="wordoriginal">die Banane</span> - banana<br>
+                        <span class="wordoriginal">die Orange</span> - orange<br>
+                        <span class="wordoriginal">die Erdbeere</span> - strawberry<br>
+                        <span class="wordoriginal">die Traube</span> - grape<br>
+                        <span class="wordoriginal">die Zitrone</span> - lemon<br>
+                    </div>
+
+                    <h3 class="vocabulary_title">Vegetables (Gemüse)</h3>
+                    <div class="vocabulary_hidden">
+                        <span class="wordoriginal">die Tomate</span> - tomato<br>
+                        <span class="wordoriginal">die Gurke</span> - cucumber<br>
+                        <span class="wordoriginal">die Karotte</span> - carrot<br>
+                        <span class="wordoriginal">die Kartoffel</span> - potato<br>
+                        <span class="wordoriginal">der Salat</span> - lettuce / salad<br>
+                        <span class="wordoriginal">die Zwiebel</span> - onion<br>
+                    </div>
+
+                    <h3 class="vocabulary_title">Drinks (Getränke)</h3>
+                    <div class="vocabulary_hidden">
+                        <span class="wordoriginal">das Wasser</span> - water<br>
+                        <span class="wordoriginal">der Saft</span> - juice<br>
+                        <span class="wordoriginal">die Milch</span> - milk<br>
+                        <span class="wordoriginal">der Kaffee</span> - coffee<br>
+                        <span class="wordoriginal">der Tee</span> - tea<br>
+                        <span class="wordoriginal">die Limonade</span> - lemonade / soda<br>
+                    </div>
+
+                    <h3 class="vocabulary_title">Meat & Fish (Fleisch & Fisch)</h3>
+                    <div class="vocabulary_hidden">
+                        <span class="wordoriginal">das Fleisch</span> - meat<br>
+                        <span class="wordoriginal">das Huhn</span> - chicken<br>
+                        <span class="wordoriginal">das Rindfleisch</span> - beef<br>
+                        <span class="wordoriginal">das Schweinefleisch</span> - pork<br>
+                        <span class="wordoriginal">der Fisch</span> - fish<br>
+                        <span class="wordoriginal">die Wurst</span> - sausage<br>
+                    </div>
+
+                    <h3 class="vocabulary_title">Dairy & Eggs (Milchprodukte & Eier)</h3>
+                    <div class="vocabulary_hidden">
+                        <span class="wordoriginal">die Butter</span> - butter<br>
+                        <span class="wordoriginal">der Käse</span> - cheese<br>
+                        <span class="wordoriginal">das Ei</span> - egg<br>
+                        <span class="wordoriginal">der Joghurt</span> - yogurt<br>
+                        <span class="wordoriginal">die Sahne</span> - cream<br>
+                    </div>
+
+                    <h3 class="vocabulary_title">Bread & Bakery (Brot & Backwaren)</h3>
+                    <div class="vocabulary_hidden">
+                        <span class="wordoriginal">das Brot</span> - bread<br>
+                        <span class="wordoriginal">das Brötchen</span> - bread roll<br>
+                        <span class="wordoriginal">das Croissant</span> - croissant<br>
+                        <span class="wordoriginal">der Kuchen</span> - cake<br>
+                        <span class="wordoriginal">der Keks</span> - cookie<br>
+                    </div>
+
+                    <h3 class="vocabulary_title">Snacks & Sweets (Snacks & Süßigkeiten)</h3>
+                    <div class="vocabulary_hidden">
+                        <span class="wordoriginal">die Schokolade</span> - chocolate<br>
+                        <span class="wordoriginal">das Eis</span> - ice cream<br>
+                        <span class="wordoriginal">die Nüsse</span> - nuts<br>
+                        <span class="wordoriginal">die Bonbons</span> - candy<br>
+                    </div>
+
+                    <h3 class="vocabulary_title">Meals & Dishes (Mahlzeiten & Gerichte)</h3>
+                    <div class="vocabulary_hidden">
+                        <span class="wordoriginal">das Frühstück</span> - breakfast<br>
+                        <span class="wordoriginal">das Mittagessen</span> - lunch<br>
+                        <span class="wordoriginal">das Abendessen</span> - dinner<br>
+                        <span class="wordoriginal">die Suppe</span> - soup<br>
+                        <span class="wordoriginal">der Salat</span> - salad<br>
+                        <span class="wordoriginal">die Pizza</span> - pizza<br>
+                    </div>
+                </div>
+        </div>
+        <div id="unit_container2_background">
+            <div class="unit_container" id="unit_container2">
+                <h1>Excercises</h1>
+                <div class="unit_excercisetable">
+                    <div class="unit_excercisetable_row1">
+                        <div class="unit_excercisetable_row1_box" id="unit_excercisetable_row1_box1"><h3>Flashcards</h3></div>
+                        <div class="unit_excercisetable_row1_box" id="unit_excercisetable_row1_box3"><h3>Fill in</h3></div>  
+                        <div class="unit_excercisetable_row1_box" id="unit_excercisetable_row1_box4"><h3>Drag and Drop</h3></div>                                          
+                    </div>
+                    <div class="unit_excercisetable_row2">
+                        <div class="app">
+                            <h1>Quiz</h1>
+                            <div class="quiz">
+                                <h2 id="question">Question goes here</h2>
+                                <div id="answer-buttons">
+                                <button class="btn">Answer 1</button>
+                                <button class="btn">Answer 2</button>
+                                <button class="btn">Answer 3</button>
+                                <button class="btn">Answer 4</button>
+                                </div>
+                                <button id="next-btn">Next</button>
+                            </div>                            
+                        </div>
+                    </div>
+                    <div class="flashcards">
+                        <div class="semi-big-cont">
+                            <!-- Types of Accommodation -->
+                            <div class="maincontainer">
+                            <div class="thecard">
+                                <div class="thefront"><p>das Haus</p></div>
+                                <div class="theback"><p>house</p></div>
+                            </div>
+                            </div>
+                            <div class="maincontainer">
+                            <div class="thecard">
+                                <div class="thefront"><p>die Wohnung</p></div>
+                                <div class="theback"><p>apartment / flat</p></div>
+                            </div>
+                            </div>
+                            <div class="maincontainer">
+                            <div class="thecard">
+                                <div class="thefront"><p>das Einfamilienhaus</p></div>
+                                <div class="theback"><p>detached house</p></div>
+                            </div>
+                            </div>
+                            <div class="maincontainer">
+                            <div class="thecard">
+                                <div class="thefront"><p>das Reihenhaus</p></div>
+                                <div class="theback"><p>terraced house</p></div>
+                            </div>
+                            </div>
+                            <div class="maincontainer">
+                            <div class="thecard">
+                                <div class="thefront"><p>das Mehrfamilienhaus</p></div>
+                                <div class="theback"><p>apartment building</p></div>
+                            </div>
+                            </div>
+                            <div class="maincontainer">
+                            <div class="thecard">
+                                <div class="thefront"><p>das Studentenwohnheim</p></div>
+                                <div class="theback"><p>student dormitory</p></div>
+                            </div>
+                            </div>
+                            <div class="maincontainer">
+                            <div class="thecard">
+                                <div class="thefront"><p>das Hochhaus</p></div>
+                                <div class="theback"><p>high-rise</p></div>
+                            </div>
+                            </div>
+                            <div class="maincontainer">
+                            <div class="thecard">
+                                <div class="thefront"><p>die Villa</p></div>
+                                <div class="theback"><p>villa / mansion</p></div>
+                            </div>
+                            </div>
+                            <div class="maincontainer">
+                            <div class="thecard">
+                                <div class="thefront"><p>das Ferienhaus</p></div>
+                                <div class="theback"><p>holiday home</p></div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fillin">
+                        <div class="unavailable-text">ჯერ არაა ხელმისაწვდომი</div>
+                    </div>
+                        <div class="dragdrop" id="draggame">
+                        <!-- Top row: pool of draggable fruit images -->
+                            <!-- Fruit pool: draggable items -->
+                            <div id="fruit-pool" class="fruit-pool" aria-label="Fruit pool">
+                                <img id="apple"      class="fruit" src="unit5_f1.png"  alt="Apple"      draggable="true" data-fruit="apple">
+                                <img id="pear"       class="fruit" src="unit5_f2.png"  alt="Pear"       draggable="true" data-fruit="pear">
+                                <img id="grapes"     class="fruit" src="unit5_f3.png"  alt="Grapes"     draggable="true" data-fruit="grapes">
+                                <img id="banana"     class="fruit" src="unit5_f4.png"  alt="Banana"     draggable="true" data-fruit="banana">
+                                <img id="orange"     class="fruit" src="unit5_f5.png"  alt="Orange"     draggable="true" data-fruit="orange">
+                                <img id="strawberry" class="fruit" src="unit5_f6.png"  alt="Strawberry" draggable="true" data-fruit="strawberry">
+                                <img id="tomatoes"   class="fruit" src="unit5_f7.png"  alt="Tomatoes"   draggable="true" data-fruit="tomatoes">
+                                <img id="cucumber"   class="fruit" src="unit5_f8.png"  alt="Cucumber"   draggable="true" data-fruit="cucumber">
+                                <img id="potatoes"   class="fruit" src="unit5_f9.png"  alt="Potatoes"   draggable="true" data-fruit="potatoes">
+                                <img id="carrot"     class="fruit" src="unit5_f10.png" alt="Carrot"     draggable="true" data-fruit="carrot">
+                                <img id="onion"      class="fruit" src="unit5_f11.png" alt="Onion"      draggable="true" data-fruit="onion">
+                            </div>
+
+                            <!-- Target boxes -->
+                            <div class="boxes">
+                                <div class="box" data-fruit="apple" aria-label="Drop apple here">
+                                    <div class="drop-slot"></div>
+                                    <div class="label"><strong>der Apfel</strong><br><span class="color">rot</span></div>
+                                </div>
+
+                                <div class="box" data-fruit="pear" aria-label="Drop pear here">
+                                    <div class="drop-slot"></div>
+                                    <div class="label"><strong>die Birne</strong><br><span class="color">grün</span></div>
+                                </div>
+
+                                <div class="box" data-fruit="grapes" aria-label="Drop grapes here">
+                                    <div class="drop-slot"></div>
+                                    <div class="label"><strong>die Trauben</strong><br><span class="color">lila</span></div>
+                                </div>
+
+                                <div class="box" data-fruit="banana" aria-label="Drop banana here">
+                                    <div class="drop-slot"></div>
+                                    <div class="label"><strong>die Banane</strong><br><span class="color">gelb</span></div>
+                                </div>
+
+                                <div class="box" data-fruit="orange" aria-label="Drop orange here">
+                                    <div class="drop-slot"></div>
+                                    <div class="label"><strong>die Orange</strong><br><span class="color">orange</span></div>
+                                </div>
+
+                                <div class="box" data-fruit="strawberry" aria-label="Drop strawberry here">
+                                    <div class="drop-slot"></div>
+                                    <div class="label"><strong>die Erdbeere</strong><br><span class="color">rot</span></div>
+                                </div>
+
+                                <div class="box" data-fruit="tomatoes" aria-label="Drop tomatoes here">
+                                    <div class="drop-slot"></div>
+                                    <div class="label"><strong>die Tomaten</strong><br><span class="color">rot</span></div>
+                                </div>
+
+                                <div class="box" data-fruit="cucumber" aria-label="Drop cucumber here">
+                                    <div class="drop-slot"></div>
+                                    <div class="label"><strong>die Gurke</strong><br><span class="color">grün</span></div>
+                                </div>
+
+                                <div class="box" data-fruit="potatoes" aria-label="Drop potatoes here">
+                                    <div class="drop-slot"></div>
+                                    <div class="label"><strong>die Kartoffeln</strong><br><span class="color">braun</span></div>
+                                </div>
+
+                                <div class="box" data-fruit="carrot" aria-label="Drop carrot here">
+                                    <div class="drop-slot"></div>
+                                    <div class="label"><strong>die Karotte</strong><br><span class="color">orange</span></div>
+                                </div>
+
+                                <div class="box" data-fruit="onion" aria-label="Drop onion here">
+                                    <div class="drop-slot"></div>
+                                    <div class="label"><strong>die Zwiebel</strong><br><span class="color">weiß</span></div>
+                                </div>
+                            </div>
+                        <div class="controls">
+                            <button id="resetBtn" type="button">Reset</button>
+                            <span id="message" aria-live="polite"></span>
+                        </div>
+                    </div>
+                </div>            
+            </div>
+        </div>
+    </main>
+    <script src="unit.js"></script>
+    <script src="unit1.6.js"></script>    
+</body>
+</html>
